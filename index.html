@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Falling Piano tiles</title>
+	<link rel="stylesheet" type="text/css" href="css/app.css">
+</head>
+<body>
+	<div class="container">
+		<div class="instruction" id="instruction">
+			<div class="card">
+				<h1>Instruction</h1>
+				<ul>
+					<ol> 1. Place Select the music</ol>
+					<ol> 2. Enjoy the game</ol>
+				</ul>
+				<div class="form-group">
+					<select name="music" oninput="check(this)" id="music">
+						<option value="oke">oke</option>
+						<option value="saja">saja</option>
+						<option value="lah">lah</option>
+					</select>
+					<button type="button" id="btn_play" disabled>Play</button>
+				</div>
+			</div>
+		</div>
+		<div class="coutdown" id="count_num"></div>
+
+		<div class="control">
+			<div class="time">
+				Time:
+				<div>00:00</div>				
+			</div>
+			<div class="score">
+				Score:
+				<div>00.00%</div>
+			</div>
+		</div>
+		<div class="cvs">
+			<canvas id="cvs-a" width="600px" height="960px"></canvas>
+			<canvas id="cvs-b" width="600px" height="150px"></canvas>
+		</div>
+		
+	</div>
+</body>
+<script type="text/javascript" src="js/main.js"></script>
+<script type="text/javascript" src="js/game.js"></script>
+</html>

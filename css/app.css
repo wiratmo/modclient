@@ -1,0 +1,65 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+html, 
+body{
+	background: #000000;
+	color: #ffafff;
+	height: 100%;
+}
+body{
+	overflow-x: hidden;
+}
+.instruction{
+	z-index: 2;
+	display: flex;
+	flex-direction: column;
+	margin: auto;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgb(0, 4, 24) ;
+	font-size: 18px;
+	text-shadow: 2px 2px 2xp rgba(0, 0, 0, 0.2);	
+}
+.card{
+	overflow-y: hidden;
+	border-radius: 20px;
+	background-color: #eaeaea;
+	color: red;
+	display: flex;
+	flex-direction: column;
+	padding: 20px;
+	width: 50%;
+	margin: 50px auto;
+}
+.isVisible{
+	visibility: hidden;
+}
+.coutdown{
+	z-index: 1;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	font-size: 256px;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 4, 24, 0.5) ;
+	text-shadow: 2px 2px 2xp rgba(0, 0, 0, 0.2);
+}
+.cvs > #cvs-a, .cvs > #cvs-b{
+	display: flex;
+	margin: 0px auto;
+}
+.control{
+	position: fixed;
+	margin-top: 10px;
+	margin-left: 100px;
+	font-size: 36px;
+}
